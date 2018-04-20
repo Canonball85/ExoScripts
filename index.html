@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <title>Exoscripts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale-1.0, user-scalable-yes">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- banner -->
+  <div class="container-fluid banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="banner-title"><img src="img/avion.gif" alt="avion" height="100" width="100"><span class="ete">L'été sera chaud !</span></div>
+        </div>
+        <!-- clock -->
+        <div id="clock"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div class="todoform">
+    <!--todolist-->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 wrapper">
+          <h1>Penser à</h1>
+          <input id ="task" ><button id ="add">Ajouter</button>
+          <!--<hr>-->
+          <div id ="todos"></div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-md-6">
+
+          <form id="cf" method="post" action="" >
+            <h1>Me Contacter</h1>
+            <fieldset>
+
+              <label for="name">Nom</label>
+              <input type="text" id="name" name="name" class="stored" />
+
+              <label for="mail">Mail</label>
+              <input type="text" id="mail" name="mail" class="stored" />
+              <label for="message">Message</label>
+              <textarea id="mesage" name="message" class="stored"></textarea>
+
+            </fieldset>
+
+            <button type="submit">Envoyer</button>
+            <input id="clear" type="reset" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container comptage">
+    <div class="row">
+      <div class="col-md-6 counterword">
+        <h1 class="wordlength">tapez un mot dans la case ci-dessous</h1>
+        <input id="str" value="" type="text">
+        <div id="output"></div>
+        <button id="btn"><h2 class="wordclick">cliquez pour calculer la longueur du mot</h2></button>
+      </div>
+
+
+
+
+      <div class="col-md-6">
+        <form id ="myform" Name="calc">
+          <input name="display" style="width:650px;height:50px;text-align:center;"><br>
+          <input class="keys" type=button value="0" OnClick="calc.display.value+='0'" >
+          <input class="keys" type=button value="1" OnClick="calc.display.value+='1'">
+          <input class="keys" type=button value="2" OnClick="calc.display.value+='2'">
+          <input class="keys" type=button value="+" OnClick="calc.display.value+='+'" style="background-color:#cc5c11;"> <br>
+          <input class="keys" type=button value="3" OnClick="calc.display.value+='3'">
+          <input class="keys" type=button value="4" OnClick="calc.display.value+='4'">
+          <input class="keys" type=button value="5" OnClick="calc.display.value+='5'">
+          <input class="keys" type=button value="-" OnClick="calc.display.value+='-'" style="background-color:#ba55d3;"> <br>
+          <input class="keys" type=button value="6" OnClick="calc.display.value+='6'">
+          <input class="keys" type=button value="7" OnClick="calc.display.value+='7'">
+          <input class="keys" type=button value="8" OnClick="calc.display.value+='8'">
+          <input class="keys" type=button value="x" OnClick="calc.display.value+='*'" style="background-color:#7db1b2;"><br>
+          <input class="keys" type=button value="9" OnClick="calc.display.value+='9'">
+          <input class="keys" type=button value="C" OnClick="calc.display.value=''" style="background-color:#cc0000;">
+          <input class="keys" type=button value="=" OnClick="calc.display.value=eval(calc.display.value)" >
+          <input class="keys" type=button value="&#247;" OnClick="calc.display.value+='/'" style="background-color:green;" >
+        </form>
+      </div>
+
+    </div>
+  </div>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
